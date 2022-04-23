@@ -2,11 +2,29 @@
 
 ## Welche Repos / Projekte gibt es zu dem Thema? ##
 ### Spiele:
+- #### [Trackmania](https://github.com/AndrejGobeX/TrackMania_AI)
+  [![0_Track_Mania](./res/0_Track_Mania.png)](https://www.youtube.com/watch?v=a8Bo2DHrrow)
+
+- #### [Tensorkart](https://github.com/kevinhughes27/TensorKart)
+  Self-driving MarioKart with TensorFlow and minimal training data
+  [![0_TensorKart](./res/0_TensorKart.gif)](https://github.com/kevinhughes27/TensorKart)
+
+- #### [GTA V](https://github.com/hadipash/AI_GTA5)
+  [![0_TensorKart](./res/0_GTA_V.gif)](https://www.youtube.com/watch?v=BRK0wm7rrfQ)
+  Alternativen
+  - [Self-Driving-Car-in-Video-Games](https://github.com/ikergarcia1996/Self-Driving-Car-in-Video-Games)
+
+- #### [Euro Truck Simulator 2](https://github.com/aleju/self-driving-truck)
+  [![0_Euro_Truck](./res/0_Euro_Truck.png)](https://www.youtube.com/watch?v=59iNsSnAUfA)
+
+- #### Gran Turismo Sport
+  [Demo](https://www.youtube.com/watch?v=Zeyv1bN9v4A)
+  [Paper](https://rpg.ifi.uzh.ch/docs/RAL21_Fuchs.pdf) `Super-Human Performance in Gran Turismo Sport
+Using Deep Reinforcement Learning`
 
 ### Andere Projekte:
-- #### [AWS DeepRacer](https://aws.amazon.com/de/deepracer/)
-  Kostenpflichtige Liga zum Traininieren von Fahrzeugen
-  [![0_AWS_DeepRacer_Evo_7](./res/0_AWS_DeepRacer_Evo_7.png)](https://aws.amazon.com/de/deepracer/)
+- ### [Autonomes Einparken](https://github.com/trekhleb/self-parking-car-evolution)
+  [Demo im Browser](https://trekhleb.dev/self-parking-car-evolution/#/)
 
 - #### [monokim/PyRacing](https://github.com/monokim/PyRacing)
   A.I. learns how to drive with reinforcement learning
@@ -19,6 +37,17 @@
   [![0_samuel_deep_learning_car](./res/0_samuel_deep_learning_car.png)](https://www.youtube.com/watch?v=Aut32pR5PQA)
 
 ## Welche Tools / Datensätze gibt es zu dem Thema?
+### Simulatoren:
+- #### [Udacity's Self-Driving Car Simulator](https://github.com/udacity/self-driving-car-sim)
+- #### [Microsoft's AirSim](https://github.com/Microsoft/AirSim)
+- #### [Autopilot-TensorFlow](https://github.com/SullyChen/Autopilot-TensorFlow)
+- #### [openpilot](https://github.com/commaai/openpilot)
+
+### Andere:
+- #### [AWS DeepRacer](https://aws.amazon.com/de/deepracer/)
+  Kostenpflichtige Liga zum Trainieren von Fahrzeugen
+  [![0_AWS_DeepRacer_Evo_7](./res/0_AWS_DeepRacer_Evo_7.png)](https://aws.amazon.com/de/deepracer/)
+
 - ### M.I.T. [Carmezim/MIT-6.S094](https://github.com/Carmezim/MIT-6.S094)
   Introduction auf [YouTube](https://youtu.be/1L0TKZQcUtA)
 
