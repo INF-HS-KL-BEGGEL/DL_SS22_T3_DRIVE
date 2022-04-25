@@ -35,9 +35,19 @@ Using Deep Reinforcement Learning`
 - #### [Applying Evolutionary Artificial Neural Networks](https://github.com/ArztSamuel/Applying_EANNs) #### 
   Eine kleine 2D-Simulation in Unity und C#, in der Autos mithilfe eines neuronalen Netzes und evolutionärer Algorithmen lernen, selbständig durch einen Parcours zu manövrieren.
   [![0_samuel_deep_learning_car](./res/0_samuel_deep_learning_car.png)](https://www.youtube.com/watch?v=Aut32pR5PQA)
+  
+- #### Unity ML Car Repos
+  - [Car Racer with Unity ML-Agents](https://github.com/maxiwoj/car_racer_ml_agents)
+
+    ![car_racer_with_unity](./res/car_racer_with_unity.gif)
+
+  - [Autonomous Car Parking using ML-Agents](https://medium.com/xrpractices/autonomous-car-parking-using-ml-agents-d780a366fe46)
+
+    ![autonomous_car_parking_ml_agents](./res/autonomous_car_parking_ml_agents.gif)
 
 ## Welche Tools / Datensätze gibt es zu dem Thema?
 ### Simulatoren:
+- #### [3D Engine - Unity mit Machine Learning Agents](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/ML-Agents-Overview.md)
 - #### [Udacity's Self-Driving Car Simulator](https://github.com/udacity/self-driving-car-sim)
 - #### [Microsoft's AirSim](https://github.com/Microsoft/AirSim)
 - #### [Autopilot-TensorFlow](https://github.com/SullyChen/Autopilot-TensorFlow)
