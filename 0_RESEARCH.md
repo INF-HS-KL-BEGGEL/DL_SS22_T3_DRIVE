@@ -3,7 +3,7 @@
 ## Welche Repos / Projekte gibt es zu dem Thema? ##
 ### Spiele:
 - #### [Trackmania](https://github.com/AndrejGobeX/TrackMania_AI)
-  [![0_Track_Mania](./res/0_Track_Mania.png)](https://www.youtube.com/watch?v=a8Bo2DHrrow)
+  [![0_Track_Mania](./res/0_Track_Mania.gif)](https://www.youtube.com/watch?v=a8Bo2DHrrow)
 
 - #### [Tensorkart](https://github.com/kevinhughes27/TensorKart)
   Self-driving MarioKart with TensorFlow and minimal training data
@@ -15,7 +15,7 @@
   - [Self-Driving-Car-in-Video-Games](https://github.com/ikergarcia1996/Self-Driving-Car-in-Video-Games)
 
 - #### [Euro Truck Simulator 2](https://github.com/aleju/self-driving-truck)
-  [![0_Euro_Truck](./res/0_Euro_Truck.png)](https://www.youtube.com/watch?v=59iNsSnAUfA)
+  [![0_Euro_Truck](./res/0_Euro_Truck.gif)](https://www.youtube.com/watch?v=59iNsSnAUfA)
 
 - #### Gran Turismo Sport
   [Demo](https://www.youtube.com/watch?v=Zeyv1bN9v4A)
