@@ -56,3 +56,7 @@ Using Deep Reinforcement Learning`
   Roborace wird die weltweit erste Rennserie für autonome Elektrofahrzeuge werden.
   Zehn Teams, jedes mit jeweils zwei Fahrzeugen, sollen im Rahmen der Events an einem einstündigen Rennen teilnehmen. Jeder Rennstall soll dazu mit gleichen Rennautos ausgerüstet werden. Die Echtzeitalgorithmen und die künstliche Intelligenz der Fahrzeuge müssen jedoch eigenständig programmiert werden.
   Beim [Goodwood Festival of Speed](https://www.youtube.com/watch?v=QtVbch-02Fs) wurde zudem das Robocar der Öffentlichkeit vorgeführt. Das Fahrzeug absolvierte am 13. Juli 2018 den ersten offiziellen autonomen Lauf im Rahmen der Veranstaltung.
+  
+- ### [CARLA](http://carla.org)
+  (https://youtu.be/S2VIP0qumas)
+  CARLA has been developed from the ground up to support development, training, and validation of autonomous driving systems. In addition to open-source    code and protocols, CARLA provides open digital assets (urban layouts, buildings, vehicles) that were created for this purpose and can be used freely. The simulation platform supports flexible specification of sensor suites, environmental conditions, full control of all static and dynamic actors, maps generation and much more.
