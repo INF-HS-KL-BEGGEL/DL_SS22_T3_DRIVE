@@ -61,7 +61,7 @@ Using Deep Reinforcement Learning`
 - #### [AWS DeepRacer](https://aws.amazon.com/de/deepracer/)
   Kostenpflichtige Liga zum Trainieren von Fahrzeugen
   [![0_AWS_DeepRacer_Evo_7](./res/0_AWS_DeepRacer_Evo_7.png)](https://aws.amazon.com/de/deepracer/)
-
+  Open Source [Repository](https://github.com/aws-deepracer) zur Nutzung des DeepRacers unabhängig von AWS
 - ### M.I.T. [Carmezim/MIT-6.S094](https://github.com/Carmezim/MIT-6.S094)
   Introduction auf [YouTube](https://youtu.be/1L0TKZQcUtA)
 
