@@ -73,7 +73,7 @@ Videos zum Thema "Deep Reinforcement Learning"
 
 ## AWS DeepRacer Student League <a name="league"></a>
 
-![League Leaderbaord](./res/1_AWS_League_Leaderboard.png)
+![League Leaderboard](./res/1_AWS_League_Leaderboard.png)
 
 
 ## Eventkalender <a name="calendar"></a>
