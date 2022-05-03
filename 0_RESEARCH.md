@@ -39,11 +39,11 @@ Using Deep Reinforcement Learning`
 - #### Unity ML Car Repos
   - [Car Racer with Unity ML-Agents](https://github.com/maxiwoj/car_racer_ml_agents)
 
-    ![car_racer_with_unity](./res/car_racer_with_unity.gif)
+    ![car_racer_with_unity](./res/0_car_racer_with_unity.gif)
 
   - [Autonomous Car Parking using ML-Agents](https://medium.com/xrpractices/autonomous-car-parking-using-ml-agents-d780a366fe46)
 
-    ![autonomous_car_parking_ml_agents](./res/autonomous_car_parking_ml_agents.gif)
+    ![autonomous_car_parking_ml_agents](./res/0_autonomous_car_parking_ml_agents.gif)
 
 ## Welche Tools / Datensätze gibt es zu dem Thema?
 ### Simulatoren:
