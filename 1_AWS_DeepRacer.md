@@ -20,7 +20,7 @@
 
 AWS bietet verschiedene Videos in englischer Sprache an zum Selbststudium. Diese sind nicht frei auf YouTube verfügbar.
 
-![Video Dashboad](./res/1_AWS_Progress.png)
+![Video Dashboad](./res/1_AWS_Coaching_Progress.png)
 
 ### Machine Learning<a name="ml"></a>
 
