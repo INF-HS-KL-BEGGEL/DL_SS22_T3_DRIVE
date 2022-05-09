@@ -112,9 +112,6 @@ behaviors:
 - Baut auf Pytorch und dem Open Neural Network Exchange Format auf
 
 ### Gym Unity Wrapper ([Doku](https://github.com/Unity-Technologies/ml-agents/blob/main/gym-unity/README.md))
-- Mit dem Gym Unity Wrapper ist es möglich Unity ML Agents mit den Baseline Algorithmen aus gym zu trainieren (mit Limitationen)
-- Zusätzlich unterstützt der Gym Unity Wrapper auch die Google Dopamine Algorithmen (mit Limitationen)
-
-
-
-
+- Mit dem Gym Unity Wrapper ist es möglich aus dem Unity Enviornment ein gym zu machen
+  - Dadurch ist das Trainieren mit den OpenAI Baseline Algorithmen möglich (mit Limitationen)
+  - Zusätzlich werden dann auch die Google Dopamine Algorithmen unterstützt (mit Limitationen)
