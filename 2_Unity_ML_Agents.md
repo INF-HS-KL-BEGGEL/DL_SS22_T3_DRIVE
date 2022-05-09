@@ -85,6 +85,41 @@ behaviors:
     keep_checkpoints: 5
 ```
 
+### Beobachtungen des Agents
+*ReachTargetAgent_4.cs*
+```C#
+public override void CollectObservations(VectorSensor sensor)
+{
+    Vector3 dirToTarget = (target.position - this.transform.position).normalized;
+    // Target position in agent frame
+    sensor.AddObservation(this.transform.InverseTransformPoint(target.transform.position)); // vec 3
+    // Agent velocity in agent frame
+    sensor.AddObservation(this.transform.InverseTransformVector(AgentVelocity)); // vec 3
+    // Direction to target in agent frame
+    sensor.AddObservation(this.transform.InverseTransformDirection(dirToTarget)); // vec 3
+}
+```
+
+### Reward für Policy
+*ReachTargetAgent.cs*
+```C#
+public void FixedUpdate()
+{
+    var distanceToTarget = Vector3.Distance(this.transform.position, target.transform.position);
+    // Upon reaching the target, respawn it to a random position and add reward of +1
+    if (distanceToTarget < 1)
+    {
+        m_targetReached = true;
+        AddReward(1f);
+        EndEpisode();
+    }
+    // If the car falls off the platform, end episode
+    if (this.transform.localPosition.y < 0)
+    {
+        EndEpisode();
+    }
+}
+```
 
 ### Training
 <img src="res/2_Unity_ML_Agents_Tensorboard.png" align="middle" width="720"/> 
@@ -106,6 +141,7 @@ behaviors:
 ## Grenzen und Erweiterungen
 ### Unity Inference Engine & externes Training ([Doku](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Unity-Inference-Engine.md))
 - Extern trainierte Models werden offiziell nicht unterstützt
+- Externe Trainer über Python Low-Level API andockbar 
 - Tensorflow wurde von PyTorch seit [Release 13](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_13) als Trainer abgelöst, da es keine native C# Unterstützung bietet
 - Es ist aber möglich wenn die Input und Output Tensoren angepasst werden
 - Grund ist eigene Engine die auf Compute Shader basiert
