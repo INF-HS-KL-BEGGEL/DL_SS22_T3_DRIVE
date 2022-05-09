@@ -106,7 +106,7 @@ behaviors:
 ## Grenzen und Erweiterungen
 ### Unity Inference Engine & externes Training ([Doku](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Unity-Inference-Engine.md))
 - Extern trainierte Models werden offiziell nicht unterstützt
-- Tensorflow wurde seit [Release 13](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_13) als Trainer abgelöst, da es keine native C# Unterstützung bietet
+- Tensorflow wurde von PyTorch seit [Release 13](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_13) als Trainer abgelöst, da es keine native C# Unterstützung bietet
 - Es ist aber möglich wenn die Input und Output Tensoren angepasst werden
 - Grund ist eigene Engine die auf Compute Shader basiert
 - Baut auf Pytorch und dem Open Neural Network Exchange Format auf
