@@ -72,7 +72,7 @@ Diese Videos sind von AWS und spezialisieren sich auf den DeepRacer.
 
 ## Physische Rennstrecken <a name="races"></a>
 
-Für die Nutzung des physiscchen DeepRacers muss man sich sehr genau an die Spezifikationn von AWS halten. 
+Für die Nutzung des physischen DeepRacers auf einer Rennstrecke muss man sich sehr genau an die Spezifikationen von AWS halten. 
 
 Der Platzverbrauch dieser Strecken kann zwischen einem Büro und einer Vorlesungssaal schwanken.
 
@@ -85,7 +85,7 @@ Dabei muss Folgendes beachtet werden:
 
 Es existieren einige, vorgefertigte Strecken. Die jeweilige .PDF kann dann hoch skaliert werden und ausgedruckt werden.
 
-Der kleinste Kurs (kontnuierlicher Kreis) sollte demnach einen Duechmesser von 1, 50 bzw. eher 1. 80 m haben.
+Der kleinste Kurs (kontinuierlicher Kreis) sollte demnach einen Duechmesser von 1,50 bzw. eher 1,80 m haben.
 
 ![AWS DeepRacer Championship Cup 2019 Track Template](./res/1_Track_2019.png)
 
@@ -109,7 +109,7 @@ Fläche: 5,5 x 12,2 m
 2. Name vergeben
 3. Strecke wählen
 4. Algorithmus
-5. Angabe der `Reward function`
+5. Schreiben der `Reward function`
 6. Dauer des Trainings
 
 Die Funktion für den Reward des Agenten wird in Python geschrieben.
