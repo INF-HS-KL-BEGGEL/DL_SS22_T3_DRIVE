@@ -1,6 +1,6 @@
 # AWS DeepRacer Student
 
-![Logo](./res/1_AWS_Logo.png = 200x200)
+![Logo](./res/1_AWS_Logo.png)
 
 
 1. [Links](#links)
@@ -87,10 +87,10 @@ Es existieren einige, vorgefertigte Strecken. Die jeweilige .PDF kann dann hoch 
 
 Der kleisnte Kurs (kontnuierlicher Kreis) sollte demnach einen Duechmesser von 1, 50 bzw. eher 1. 80 m haben.
 
-[AWS DeepRacer Championship Cup 2019 Track Template](./res/1_Track_2019.png)
+![AWS DeepRacer Championship Cup 2019 Track Template](./res/1_Track_2019.png)
 10,4 x 8,3 m
 
-[AWS DeepRacer 2022 Summit Speedway Track Template](./res/1_Track_2022.png)
+![AWS DeepRacer 2022 Summit Speedway Track Template](./res/1_Track_2022.png)
 5,5 x 12,2 m
 
 [![1_Track_Size](./res/1_Track_Size.PNG)](https://www.youtube.com/watch?v=MaSZfEmqMPs)
@@ -110,7 +110,7 @@ Die Funktion für den Reward des Agenten wird in Python geschrieben.
 
 Während des Trainings kann man den Agenten im Live-Stream verfolgen.
 
-[Simulator](./res/1_Training_Simulator.PNG)
+![Simulator](./res/1_Training_Simulator.PNG)
 
 ### Input Parameters
 
@@ -150,7 +150,7 @@ Die Paramter für die Reward-Funcion und ihre Erklärung kann [hier](https://doc
 
 Eher schhlechte Performance
 
-[Bad Model](./res/1_Bad_Model.PNG)
+![Bad Model](./res/1_Bad_Model.PNG)
 
 Platz 645/900
 
@@ -173,7 +173,7 @@ def reward_function(params):
 
 #### Zweites Modell 
 
-[Good Model](./res/1_Good_Model.PNG)
+![Good Model](./res/1_Good_Model.PNG)
 
 Platz 125/1006 -> Platz 184/1256
 
