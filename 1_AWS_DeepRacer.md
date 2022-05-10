@@ -1,6 +1,6 @@
 # AWS DeepRacer Student
 
-![Logo](./res/1_AWS_Logo.png)
+![Logo](./res/1_AWS_Logo.png =200x200)
 
 
 1. [Links](#links)
