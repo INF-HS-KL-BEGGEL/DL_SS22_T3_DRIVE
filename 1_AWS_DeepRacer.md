@@ -80,18 +80,24 @@ Dabei muss Folgendes beachtet werden:
 - [Farben](https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-track-examples.html)
 - [Kurvenradien](https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-build-your-track-construction.html)
 - Streckenbreite zwischen 53 und 69 cm
-- optionale Streckenbarrieren mit 75 cm Höge und 60 cm Abstand
+- optionale Streckenbarrieren mit 75 cm Höhe und 60 cm Abstand
 
 
 Es existieren einige, vorgefertigte Strecken. Die jeweilige .PDF kann dann hoch skaliert werden und ausgedruckt werden.
 
-Der kleisnte Kurs (kontnuierlicher Kreis) sollte demnach einen Duechmesser von 1, 50 bzw. eher 1. 80 m haben.
+Der kleinste Kurs (kontnuierlicher Kreis) sollte demnach einen Duechmesser von 1, 50 bzw. eher 1. 80 m haben.
 
 ![AWS DeepRacer Championship Cup 2019 Track Template](./res/1_Track_2019.png)
-10,4 x 8,3 m
+
+`AWS DeepRacer Championship Cup 2019 Track Template`
+
+Fläche: 10,4 x 8,3 m
 
 ![AWS DeepRacer 2022 Summit Speedway Track Template](./res/1_Track_2022.png)
-5,5 x 12,2 m
+
+`AWS DeepRacer 2022 Summit Speedway Track Template`
+
+Fläche: 5,5 x 12,2 m
 
 [![1_Track_Size](./res/1_Track_Size.PNG)](https://www.youtube.com/watch?v=MaSZfEmqMPs)
 
@@ -216,4 +222,5 @@ Weitere Beispiele für Funktionen sind [hier](https://docs.aws.amazon.com/deepra
 ### Advanced
 
 [GitHub](https://github.com/orgs/aws-deepracer/repositories)
+
 [Workshop mit Log-Analyse](https://github.com/aws-samples/aws-deepracer-workshops)
