@@ -8,6 +8,8 @@
 - #### [Tensorkart](https://github.com/kevinhughes27/TensorKart)
   Self-driving MarioKart with TensorFlow and minimal training data
   [![0_TensorKart](./res/0_TensorKart.gif)](https://github.com/kevinhughes27/TensorKart)
+- Problematik bei Tensorkart ist der verwendete Emulator Mupen64Plus, bzw. das dafür benötigte, aber mittlerweile veraltete Gym-Interface
+- Konnte nach aktuellem auf keinem getestetem Betriebssystem (Mac OS, Windows, Ubuntu) zum laufen gebracht werden
 
 - #### [GTA V](https://github.com/hadipash/AI_GTA5)
   [![0_TensorKart](./res/0_GTA_V.gif)](https://www.youtube.com/watch?v=BRK0wm7rrfQ)
@@ -61,7 +63,10 @@ Using Deep Reinforcement Learning`
 - #### [AWS DeepRacer](https://aws.amazon.com/de/deepracer/)
   Kostenpflichtige Liga zum Trainieren von Fahrzeugen
   [![0_AWS_DeepRacer_Evo_7](./res/0_AWS_DeepRacer_Evo_7.png)](https://aws.amazon.com/de/deepracer/)
-  Open Source [Repository](https://github.com/aws-deepracer) zur Nutzung des DeepRacers unabhängig von AWS
+- Open Source [Repository](https://github.com/aws-deepracer) zur Nutzung des DeepRacers unabhängig von AWS
+- Offizielle [Anforderungen & Anleitung](https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-build-your-track-materials-and-tools.html) zum Bauen einer eigenen, physischen Rennstrecke
+
+
 - ### M.I.T. [Carmezim/MIT-6.S094](https://github.com/Carmezim/MIT-6.S094)
   Introduction auf [YouTube](https://youtu.be/1L0TKZQcUtA)
 
