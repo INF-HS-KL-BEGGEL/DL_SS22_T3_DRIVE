@@ -235,9 +235,10 @@ def reward_function(params):
 
 Platzierung richtet sich nach der Rangliste am 14.05.2022
 
-| **Modell** | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Besser als** | **Resets** | 
+| **Modell**   | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Besser als** | **Resets** | 
 | ------------ | ------------ | ----------- | --------------- | -------------- | ---------- | 
 | test         | 02:55.655    | 00:58.551   |  263 / 1717     | 84,68 %        | 0          |
+| testy        | 03:00.377    | 01:00.126   |  461 / 1737     | 73,46 %        | 0          |
 | ril-speed    | 03:00.996    | 01:00.332   |  485 / 1717     | 71,75 %        | 0          |
 | speed        | 03:05.744    | 01:01.915   |  765 / 1717     | 55,44 %        | 1          |
 | apex-line    | 03:17.671    | 01:05.890   | 1165 / 1717     | 32,14 %        | 3          |
