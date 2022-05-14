@@ -35,9 +35,64 @@ Die Paramter für die Reward-Funcion und ihre Erklärung kann [hier](https://doc
     "waypoints": [(float, float), ]        # list of (x,y) as milestones along the track center
 }
 ```
-Alle Modelle werden initial mit 60 Minuten Trainigszeit angelernt.
+Alle Modelle haben folgende Gemeinsamkeiten:
+- `Ace Speedway` als Strecke,
+- 60 Minuten initiale Trainigszeit und
+- `Proximal Policy Optimization` als Optimierer
 
-### Fokus auf Speed
+Unterschiede gibt es in der `reward_function`
+
+## Modelle 
+
+### test (alt)
+
+```python
+def reward_function(params):
+   # Read input parameters
+   track_width = params['track_width']
+   distance_from_center = params['distance_from_center']
+
+   # Calculate markers that are at varying distances away from the center line
+   marker_0 = 0.05 * track_width
+   marker_1 = 0.15 * track_width
+   marker_2= 0.30 * track_width
+   marker_3 = 0.5 * track_width
+
+   # Give higher reward if the car is closer to center line and vice versa
+   if distance_from_center <= marker_0:
+      reward =1.0
+   elif distance_from_center <= marker_1:
+      reward =0.8
+   elif distance_from_center <= marker_2:
+      reward = 0.42
+   elif distance_from_center <= marker_3:
+      reward =0.05
+   else:
+      reward = 1e-5 # likely crashed/ close to off track
+
+   return float(reward)
+```
+
+### guilia (alt)
+
+```python
+def reward_function(params):
+   # Read input parameters
+   all_wheels_on_track = params['all_wheels_on_track']
+   distance_from_center = params['distance_from_center']
+   track_width = params['track_width']
+   
+   # Give a high reward if no wheels go off the track and
+   # the agent is somewhere in between the track borders
+   if all_wheels_on_track and (0.5*track_width - distance_from_center) >= 0.05:
+      reward = 1.0
+   else
+      reward = 1e-3
+   
+   return float(reward)
+```
+
+### speed
 ```python
 def reward_function(params):
     # Read input parameters
@@ -57,3 +112,13 @@ def reward_function(params):
 
     return float(reward)
 ```
+
+
+
+Platzierung richtet sich nach der Rangliste am 14.05.2022
+
+| **Modell** | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Resets** |
+| ---------- | ------------ | ----------- | --------------- | ---------- | 
+| test       | 02:55.655    | 00:58.551   | 261/1698        | 0          |
+| speed      | 03:05.744    | 02:04.660   | 1664/1698       | 1          |
+| guilia     | 03:25.397    | 01:08.466   | 1236/1698       | 0          |
