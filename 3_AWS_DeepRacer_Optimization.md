@@ -139,6 +139,61 @@ def reward_function(params):
 
 siehe test und speed
 
+### ril-steering : ril-speed
+
+Bestrafung von Zig-Zack-Linien, zu kleinen Lenkradiien und langsamem Fahren
+
+```python
+def reward_function(params):
+    # Constants
+    SPEED_THRESHOLD = 1.0
+    ABS_STEERING_THRESHOLD = 20.0
+
+    # Read input parameters
+    track_width = params["track_width"]
+    distance_from_center = params["distance_from_center"]
+    abs_steering = abs(params["steering_angle"])
+    all_wheels_on_track = params["all_wheels_on_track"]
+    speed = params["speed"]
+
+    # Calculate markers that are at varying distances away from the center line
+    marker_0 = 0.05 * track_width
+    marker_1 = 0.15 * track_width
+    marker_2 = 0.30 * track_width
+    marker_3 = 0.5 * track_width
+
+    # init reward
+    reward = 0.0
+
+    # Give higher reward if the car is closer to center line and vice versa
+    if distance_from_center <= marker_0:
+        reward = 1.0
+    elif distance_from_center <= marker_1:
+        reward = 0.8
+    elif distance_from_center <= marker_2:
+        reward = 0.42
+    elif distance_from_center <= marker_3:
+        reward = 0.05
+
+    if abs_steering > ABS_STEERING_THRESHOLD:
+        reward *= 0.8
+
+    if not all_wheels_on_track:
+        # Penalize if the car goes off track
+        reward = -1.0
+    elif speed < SPEED_THRESHOLD:
+        # Penalize if the car goes too slow
+        reward *= 0.5
+    else:
+        # High reward if the car stays on track and goes fast
+        reward *= 2.0
+
+    return float(reward)
+```
+
+
+## Platzierung
+
 Platzierung richtet sich nach der Rangliste am 14.05.2022
 
 | **Modell** | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Besser als** | **Resets** | 
