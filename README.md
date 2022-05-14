@@ -6,6 +6,7 @@
 - [Recherche](0_RESEARCH.md)
 - [AWS DeepRacer](1_AWS_DeepRacer.md)
 - [Unity ML Agenten](2_Unity_ML_Agents.md)
+- [AWS DeepRacer Optimization](3_AWS_DeepRacer_Optimization.md)
 
 ## Studierende
 
