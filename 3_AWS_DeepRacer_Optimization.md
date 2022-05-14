@@ -48,48 +48,48 @@ Unterschiede gibt es in der `reward_function`
 
 ```python
 def reward_function(params):
-   # Read input parameters
-   all_wheels_on_track = params['all_wheels_on_track']
-   distance_from_center = params['distance_from_center']
-   track_width = params['track_width']
-   
-   # Give a high reward if no wheels go off the track and
-   # the agent is somewhere in between the track borders
-   if all_wheels_on_track and (0.5*track_width - distance_from_center) >= 0.05:
-      reward = 1.0
-   else
-      reward = 1e-3
-   
-   return float(reward)
+    # Read input parameters
+    all_wheels_on_track = params['all_wheels_on_track']
+    distance_from_center = params['distance_from_center']
+    track_width = params['track_width']
+    
+    # Give a high reward if no wheels go off the track and
+    # the agent is somewhere in between the track borders
+    if all_wheels_on_track and (0.5*track_width - distance_from_center) >= 0.05:
+        reward = 1.0
+    else
+        reward = 1e-3
+    
+    return float(reward)
 ```
 
 ### test (alt)
 
 ```python
 def reward_function(params):
-   # Read input parameters
-   track_width = params['track_width']
-   distance_from_center = params['distance_from_center']
+    # Read input parameters
+    track_width = params['track_width']
+    distance_from_center = params['distance_from_center']
 
-   # Calculate markers that are at varying distances away from the center line
-   marker_0 = 0.05 * track_width
-   marker_1 = 0.15 * track_width
-   marker_2= 0.30 * track_width
-   marker_3 = 0.5 * track_width
+    # Calculate markers that are at varying distances away from the center line
+    marker_0 = 0.05 * track_width
+    marker_1 = 0.15 * track_width
+    marker_2= 0.30 * track_width
+    marker_3 = 0.5 * track_width
 
-   # Give higher reward if the car is closer to center line and vice versa
-   if distance_from_center <= marker_0:
-      reward = 1.0
-   elif distance_from_center <= marker_1:
-      reward = 0.8
-   elif distance_from_center <= marker_2:
-      reward = 0.42
-   elif distance_from_center <= marker_3:
-      reward =0.05
-   else:
-      reward = 1e-5 # likely crashed/ close to off track
+    # Give higher reward if the car is closer to center line and vice versa
+    if distance_from_center <= marker_0:
+        reward = 1.0
+    elif distance_from_center <= marker_1:
+        reward = 0.8
+    elif distance_from_center <= marker_2:
+        reward = 0.42
+    elif distance_from_center <= marker_3:
+        reward =0.05
+    else:
+        reward = 1e-5 # likely crashed/ close to off track
 
-   return float(reward)
+    return float(reward)
 ```
 
 ### speed
