@@ -44,6 +44,25 @@ Unterschiede gibt es in der `reward_function`
 
 ## Modelle 
 
+### guilia (alt)
+
+```python
+def reward_function(params):
+   # Read input parameters
+   all_wheels_on_track = params['all_wheels_on_track']
+   distance_from_center = params['distance_from_center']
+   track_width = params['track_width']
+   
+   # Give a high reward if no wheels go off the track and
+   # the agent is somewhere in between the track borders
+   if all_wheels_on_track and (0.5*track_width - distance_from_center) >= 0.05:
+      reward = 1.0
+   else
+      reward = 1e-3
+   
+   return float(reward)
+```
+
 ### test (alt)
 
 ```python
@@ -70,25 +89,6 @@ def reward_function(params):
    else:
       reward = 1e-5 # likely crashed/ close to off track
 
-   return float(reward)
-```
-
-### guilia (alt)
-
-```python
-def reward_function(params):
-   # Read input parameters
-   all_wheels_on_track = params['all_wheels_on_track']
-   distance_from_center = params['distance_from_center']
-   track_width = params['track_width']
-   
-   # Give a high reward if no wheels go off the track and
-   # the agent is somewhere in between the track borders
-   if all_wheels_on_track and (0.5*track_width - distance_from_center) >= 0.05:
-      reward = 1.0
-   else
-      reward = 1e-3
-   
    return float(reward)
 ```
 
@@ -134,6 +134,10 @@ def reward_function(params):
 
     return float(reward)
 ```
+
+### ril-speed : test + speed
+
+siehe test und speed
 
 Platzierung richtet sich nach der Rangliste am 14.05.2022
 
