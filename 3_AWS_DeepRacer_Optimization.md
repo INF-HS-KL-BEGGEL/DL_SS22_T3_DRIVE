@@ -113,7 +113,27 @@ def reward_function(params):
     return float(reward)
 ```
 
+### apex-line
 
+```python
+def reward_function(params):
+    # Read input parameters
+    all_wheels_on_track = params["all_wheels_on_track"]
+    is_crashed = params["is_crashed"]
+    is_offtrack = params["is_offtrack"]
+    progress = params['progress']
+    steps = params['steps']
+
+    # Check if agent is on track
+    if not all_wheels_on_track or is_crashed or is_offtrack:
+        reward = 1e-5
+    else:
+       # reward for shortest racing line
+       reward = progress / steps
+        
+
+    return float(reward)
+```
 
 Platzierung richtet sich nach der Rangliste am 14.05.2022
 
