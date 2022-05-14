@@ -79,9 +79,9 @@ def reward_function(params):
 
    # Give higher reward if the car is closer to center line and vice versa
    if distance_from_center <= marker_0:
-      reward =1.0
+      reward = 1.0
    elif distance_from_center <= marker_1:
-      reward =0.8
+      reward = 0.8
    elif distance_from_center <= marker_2:
       reward = 0.42
    elif distance_from_center <= marker_3:
@@ -197,9 +197,10 @@ def reward_function(params):
 Platzierung richtet sich nach der Rangliste am 14.05.2022
 
 | **Modell** | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Besser als** | **Resets** | 
-| ---------- | ------------ | ----------- | --------------- | -------------- | ---------- | 
-| test       | 02:55.655    | 00:58.551   |  263 / 1717     | 84,68 %        | 0          |
-| ril-speed  | 03:00.996    | 01:00.332   |  485 / 1717     | 71,75 %        | 0          |
-| speed      | 03:05.744    | 01:01.915   |  765 / 1717     | 55,44 %        | 1          |
-| apex-line  | 03:17.671    | 01:05.890   | 1165 / 1717     | 32,14 %        | 3          |
-| guilia     | 03:25.397    | 01:08.466   | 1236 / 1717     | 28,01 %        | 0          |
+| ------------ | ------------ | ----------- | --------------- | -------------- | ---------- | 
+| test         | 02:55.655    | 00:58.551   |  263 / 1717     | 84,68 %        | 0          |
+| ril-speed    | 03:00.996    | 01:00.332   |  485 / 1717     | 71,75 %        | 0          |
+| speed        | 03:05.744    | 01:01.915   |  765 / 1717     | 55,44 %        | 1          |
+| apex-line    | 03:17.671    | 01:05.890   | 1165 / 1717     | 32,14 %        | 3          |
+| ril-steering | 03:22.799    | 01:07.599	| 1248 / 1732     | 27,94 %        | 5          |
+| guilia       | 03:25.397    | 01:08.466   | 1268 / 1732     | 26,78 %        | 0          |
