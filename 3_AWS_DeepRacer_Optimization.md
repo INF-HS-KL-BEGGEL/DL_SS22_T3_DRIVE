@@ -74,7 +74,7 @@ def reward_function(params):
     # Calculate markers that are at varying distances away from the center line
     marker_0 = 0.05 * track_width
     marker_1 = 0.15 * track_width
-    marker_2= 0.30 * track_width
+    marker_2 = 0.30 * track_width
     marker_3 = 0.5 * track_width
 
     # Give higher reward if the car is closer to center line and vice versa
@@ -85,7 +85,7 @@ def reward_function(params):
     elif distance_from_center <= marker_2:
         reward = 0.42
     elif distance_from_center <= marker_3:
-        reward =0.05
+        reward = 0.05
     else:
         reward = 1e-5 # likely crashed/ close to off track
 
@@ -190,7 +190,7 @@ def reward_function(params):
 
     return float(reward)
 ```
-###  testy : test
+### testy : test
 
 ```python
 def reward_function(params):
@@ -204,7 +204,7 @@ def reward_function(params):
     # Calculate markers that are at varying distances away from the center line
     marker_0 = 0.1 * track_width
     marker_1 = 0.2 * track_width
-    marker_2= 0.35 * track_width
+    marker_2 = 0.35 * track_width
     marker_3 = 0.5 * track_width
 
     # init reward
@@ -218,7 +218,7 @@ def reward_function(params):
     elif distance_from_center <= marker_2:
         reward = 0.42
     elif distance_from_center <= marker_3:
-        reward =0.05
+        reward = 0.05
     else:
         reward = 1e-5 # likely crashed/ close to off track
 
