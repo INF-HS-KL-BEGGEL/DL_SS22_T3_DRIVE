@@ -231,9 +231,7 @@ def reward_function(params):
     return float(reward)
 ```
 
-
-
-### next-gen-test (neu)
+### next-gen-test
 
 ```python
 def reward_function(params):
