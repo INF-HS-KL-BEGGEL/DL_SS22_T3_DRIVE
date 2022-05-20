@@ -272,10 +272,26 @@ def reward_function(params):
     return float(reward)
 ```
 
+### Roadrunner
+
+```python
+def reward_function(params):
+    # Read input variables
+    all_wheels_on_track = params["all_wheels_on_track"]
+    is_crashed = params["is_crashed"]
+    speed = params["speed"]
+
+    if is_crashed or not all_wheels_on_track:
+        award = 0.0001
+    else:
+        award = speed
+
+    return award
+```
+
 
 ## Platzierung
 
-Platzierung richtet sich nach der Rangliste am 14.05.2022
 
 | **Modell**   | **Fahrzeit** | **∅-Runde** | **Platzierung** | **Besser als** | **Resets** | 
 | ------------ | ------------ | ----------- | --------------- | -------------- | ---------- | 
@@ -284,5 +300,11 @@ Platzierung richtet sich nach der Rangliste am 14.05.2022
 | ril-speed    | 03:00.996    | 01:00.332   |  485 / 1717     | 71,75 %        | 0          |
 | speed        | 03:05.744    | 01:01.915   |  765 / 1717     | 55,44 %        | 1          |
 | apex-line    | 03:17.671    | 01:05.890   | 1165 / 1717     | 32,14 %        | 3          |
-| ril-steering | 03:22.799    | 01:07.599	| 1248 / 1732     | 27,94 %        | 5          |
+| ril-steering | 03:22.799    | 01:07.599	  | 1248 / 1732     | 27,94 %        | 5          |
 | guilia       | 03:25.397    | 01:08.466   | 1268 / 1732     | 26,78 %        | 0          |
+| Roadrunner   | 02:57.526    | 00:59:262   | 556 / 2547      | 78,17 %        | 0          |
+
+
+## Beispiel Performance Roadrunner
+
+[![AWS Model Roadrunner](https://img.youtube.com/vi/yQd8hDzYgt0/0.jpg)](https://youtu.be/yQd8hDzYgt0)
