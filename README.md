@@ -1,5 +1,15 @@
 # DL_SS22_T3_DRIVE
 
+## Unity-Environement zum Reinforcement Learning
+
+Während der Projektarbeit wurde mittels der GameEngine [Unity](https://unity.com/) eine Umgebung für interessierte Studierende zum Trainieren von selbstfahrenden Autos auf einer konfigurierbaren Strecke entwickelt. 
+Für genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md)
+
+## Blogartikel
+
+- [Titel1](Link1)
+- [Titel2](Link2)
+
 ## Markdown-Dokumente zum Projektfortschritt
 
 - [Installation von Gym](./docs/0_Install_Gym.md)
@@ -10,9 +20,7 @@
 
 ## Studierende
 
-<div style="margin-left: auto; margin-right: auto;">
-<div style="margin-left: auto; margin-right: auto; align: center">
-<div style="margin-left: auto; margin-right: auto; align: center;">
+<div style="margin-left: auto; margin-right: auto; align: center; text-align: center" >
 
 | **Vorname** | **Nachname** | **E-Mail**           |
 ------------- | ------------ | -------------------- |
