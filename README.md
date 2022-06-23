@@ -20,7 +20,7 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 
 ## Studierende
 
-<div style="margin-left: auto; margin-right: auto; align: center; text-align: center" >
+<p style="text-align: center" >
 
 | **Vorname** | **Nachname** | **E-Mail**           |
 ------------- | ------------ | -------------------- |
@@ -28,5 +28,9 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 |Aaron        |Santamaria    |aasa0001@stud.hs-kl.de|
 |Maximilian   |Kreutz        |makr0050@stud.hs-kl.de|
 
-</div>
+</p>
+
+<a href="https://www.hs-kl.de/" style="text-align: center;">
+   <img src="../res/4_Logo.png" width="200" height="200"/>
+</a>
 
