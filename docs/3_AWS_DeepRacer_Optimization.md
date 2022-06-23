@@ -1,7 +1,7 @@
 # AWS DeepRacer Student
 
 <a href="https://student.deepracer.com">
-   <img src="./res/1_AWS_Logo.png" width="200" height="200"/>
+   <img src="../res/1_AWS_Logo.png" width="200" height="200"/>
 </a>
 
 ## Input Parameter

@@ -2,11 +2,11 @@
 
 ## Markdown-Dokumente zum Projektfortschritt
 
-- [Installation von Gym](0_INSTALL_GYM.md)
-- [Recherche](0_RESEARCH.md)
-- [AWS DeepRacer](1_AWS_DeepRacer.md)
-- [Unity ML Agenten](2_Unity_ML_Agents.md)
-- [AWS DeepRacer Optimization](3_AWS_DeepRacer_Optimization.md)
+- [Installation von Gym](./docs/0_Install_Gym.md)
+- [Recherche](./docs/0_Research.md)
+- [AWS DeepRacer](./docs/1_AWS_DeepRacer.md)
+- [Unity ML Agents](./docs/2_Unity_ML_Agents.md)
+- [AWS DeepRacer Optimization](./docs/3_AWS_DeepRacer_Optimization.md)
 
 ## Studierende
 

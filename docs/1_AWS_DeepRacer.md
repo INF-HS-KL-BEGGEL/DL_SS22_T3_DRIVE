@@ -1,6 +1,6 @@
 # AWS DeepRacer Student
 
-<img src="./res/1_AWS_Logo.png" width="200" height="200" />
+<img src="../res/1_AWS_Logo.png" width="200" height="200" />
 
 
 1. [Links](#links)
@@ -22,7 +22,7 @@
 
 AWS bietet verschiedene Videos in englischer Sprache an zum Selbststudium. Diese sind nicht frei auf YouTube verfügbar.
 
-![Video Dashboad](./res/1_AWS_Coaching_Progress.png)
+![Video Dashboad](../res/1_AWS_Coaching_Progress.png)
 
 ### Machine Learning<a name="ml"></a>
 
@@ -87,23 +87,23 @@ Es existieren einige, vorgefertigte Strecken. Die jeweilige .PDF kann dann hoch 
 
 Der kleinste Kurs (kontinuierlicher Kreis) sollte demnach einen Duechmesser von 1,50 bzw. eher 1,80 m haben.
 
-![AWS DeepRacer Championship Cup 2019 Track Template](./res/1_Track_2019.png)
+![AWS DeepRacer Championship Cup 2019 Track Template](../res/1_Track_2019.png)
 
 `AWS DeepRacer Championship Cup 2019 Track Template`
 
 Fläche: 10,4 x 8,3 m
 
-![AWS DeepRacer 2022 Summit Speedway Track Template](./res/1_Track_2022.png)
+![AWS DeepRacer 2022 Summit Speedway Track Template](../res/1_Track_2022.png)
 
 `AWS DeepRacer 2022 Summit Speedway Track Template`
 
 Fläche: 5,5 x 12,2 m
 
-[![1_Track_Size](./res/1_Track_Size.PNG)](https://www.youtube.com/watch?v=MaSZfEmqMPs)
+[![1_Track_Size](../res/1_Track_Size.PNG)](https://www.youtube.com/watch?v=MaSZfEmqMPs)
 
 ### Model Creation <a name="createmodel"></a>
 
-![Model Creation Process](./res/1_AWS_Model_Process.png)
+![Model Creation Process](../res/1_AWS_Model_Process.png)
 
 1. Overview
 2. Name vergeben
@@ -116,7 +116,7 @@ Die Funktion für den Reward des Agenten wird in Python geschrieben.
 
 Während des Trainings kann man den Agenten im Live-Stream verfolgen.
 
-![Simulator](./res/1_Training_Simulator.PNG)
+![Simulator](../res/1_Training_Simulator.PNG)
 
 ### Input Parameters
 
@@ -156,7 +156,7 @@ Die Paramter für die Reward-Funcion und ihre Erklärung kann [hier](https://doc
 
 Eher schhlechte Performance
 
-![Bad Model](./res/1_Bad_Model.PNG)
+![Bad Model](../res/1_Bad_Model.PNG)
 
 Platz 645/900
 
@@ -179,7 +179,7 @@ def reward_function(params):
 
 #### Zweites Modell 
 
-![Good Model](./res/1_Good_Model.PNG)
+![Good Model](../res/1_Good_Model.PNG)
 
 Platz 125/1006 -> Platz 184/1256
 
