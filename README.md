@@ -31,6 +31,6 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 </p>
 
 <a href="https://www.hs-kl.de/" style="text-align: center;">
-   <img src="../res/4_Logo.png" width="200" height="200"/>
+   <img src="./res/4_Logo.png" width="200" height="200"/>
 </a>
 
