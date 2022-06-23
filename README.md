@@ -12,6 +12,7 @@
 
 <div style="margin-left: auto; margin-right: auto;">
 <div style="margin-left: auto; margin-right: auto; align: center">
+<div style="margin-left: auto; margin-right: auto; align: center;">
 
 | **Vorname** | **Nachname** | **E-Mail**           |
 ------------- | ------------ | -------------------- |
