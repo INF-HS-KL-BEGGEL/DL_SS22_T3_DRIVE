@@ -10,9 +10,13 @@
 
 ## Studierende
 
+<div style="margin-left: auto; margin-right: auto;">
+
 | **Vorname** | **Nachname** | **E-Mail**           |
 ------------- | ------------ | -------------------- |
 |Alexander    |Opris         |alop0001@stud.hs-kl.de|
 |Aaron        |Santamaria    |aasa0001@stud.hs-kl.de|
 |Maximilian   |Kreutz        |makr0050@stud.hs-kl.de|
+
+</div>
 
