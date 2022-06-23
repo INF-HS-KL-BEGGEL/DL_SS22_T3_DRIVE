@@ -10,7 +10,7 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 - [Titel1](Link1)
 - [Titel2](Link2)
 
-## Markdown-Dokumente zum Projektfortschritt
+## Dokumente zum Projektfortschritt
 
 - [Installation von Gym](./docs/0_Install_Gym.md)
 - [Recherche](./docs/0_Research.md)
@@ -30,7 +30,10 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 
 </p>
 
-<a href="https://www.hs-kl.de/" style="text-align: center;">
-   <img src="./res/4_Logo.png" width="200" height="200"/>
+<a href="https://www.hs-kl.de/">
+    <img style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 30%;" src="./res/4_Logo.png" width="200" height="100"/>
 </a>
 
