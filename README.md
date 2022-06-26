@@ -2,6 +2,8 @@
 
 ## Unity-Environement zum Reinforcement Learning
 
+<img src="../res/4_Start.png" align="middle" width="720"/> 
+
 Während der Projektarbeit wurde mittels der GameEngine [Unity](https://unity.com/) eine Umgebung für interessierte Studierende zum Trainieren von selbstfahrenden Autos auf einer konfigurierbaren Strecke entwickelt. 
 Für genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md).
 
