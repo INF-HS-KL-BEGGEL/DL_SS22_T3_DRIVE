@@ -283,7 +283,7 @@ Während des Trainings bekommt man in gewissen Intervallen Rückmeldung, je nach
 
 ```tensorboard --logdir results``` kann man sich das TensorBoard und den Verlauf über die Zeit anzeigen lassen.
 
-<img src="../res/2_Unity_ML_Agents_Tensorboard.PNG" width="720"/> 
+<img src="../res/2_Unity_ML_Agents_Tensorboard.png" width="720"/> 
 
 Nach Abschluss des Trainings findet sich das NN in einem Ordner namens ```/results```in einer  ```[ID].onsx```-Datei. 
 Diese kopiert man in das Projekt und muss dann im SessionHolder dieses Datei als Model auswählen.
