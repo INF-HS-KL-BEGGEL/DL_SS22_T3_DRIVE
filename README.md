@@ -3,7 +3,7 @@
 ## Unity-Environement zum Reinforcement Learning
 
 Während der Projektarbeit wurde mittels der GameEngine [Unity](https://unity.com/) eine Umgebung für interessierte Studierende zum Trainieren von selbstfahrenden Autos auf einer konfigurierbaren Strecke entwickelt. 
-Für genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md)
+Für genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md).
 
 ## Blogartikel
 
@@ -24,12 +24,13 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 
 | **Vorname** | **Nachname** | **E-Mail**           |
 | ----------- | ------------ | -------------------- |
-|Alexander    |Opris         |alop0001@stud.hs-kl.de|
 |Aaron        |Santamaria    |aasa0001@stud.hs-kl.de|
+|Alexander    |Opris         |alop0001@stud.hs-kl.de|
 |Maximilian   |Kreutz        |makr0050@stud.hs-kl.de|
 
 </p>
-
+<br>
+<br>
 <p align="center" width="100%">
     <a href="https://www.hs-kl.de/">
         <img align="middle"
