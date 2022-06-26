@@ -17,8 +17,8 @@ Python kann unter [python.org](https://www.python.org/downloads/release/python-3
 
 ```
 python -m pip install --upgrade pip
-pip install TODO
-pip install TODO
+pip install pytorch==1.7
+pip install mlagents==0.28.0
 ```
 Alternativ kann PyTorch auf der [offiziellen Website](https://pytorch.org/) heruntergeladen werden.
 
@@ -79,11 +79,11 @@ Die Strecke kann unter Verwendung der vorgefertigten Streckenteile indiviudell z
 Dabei sind auch Strecken mit getrenntem Start und Ziel möglich. 
 
 
-<img src="../res/4_Track_Parts.png" align="middle" width="720"/> 
+<img src="../res/4_Track_Parts.png" width="720"/> 
 
 Wir haben uns für folgende Konfiguration entschieden:
 
-<img src="../res/4_Track_Overview.png" align="middle" width="720"/> 
+<img src="../res/4_Track_Overview.png" width="720"/> 
 
 ## Config.yaml zur Konfiguration 
 Vergleiche mit ([offiziellem Repository](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md))
@@ -136,7 +136,7 @@ behaviors:
 
 Falls man im Dateibaum den SessionHolder ausklappt, so kann man dann den ```TrackManager.cs``` öffnen.
 
-<img src="../res/4_Track_Manager.png" align="middle" width="720"/> 
+<img src="../res/4_Track_Manager.png" width="720"/> 
 
 Dieser enthält zahlreiche Informationen zum Status der gebauten Strecke.
 Interessant sind die letzten beiden Checkboxen:
@@ -145,7 +145,7 @@ Interessant sind die letzten beiden Checkboxen:
 
 Die ermöglichen das Anzeigen der Waypoints und der Linie, die diese miteinander verbindet.
 
-<img src="../res/4_Waypoints_on.png" align="middle" width="720"/> 
+<img src="../res/4_Waypoints_on.png" width="720"/> 
 
 ### Rewardfunction im RLDriver
 *RLDriver.cs*
@@ -246,7 +246,7 @@ Klappt man diese Datei im Inspector aus, so sieht man alle relevanten Informatio
 - ```RLDriver.cs``` und
 - den ```Behaviour Parameters```
 
-<img src="../res/4_Session_Holder.png" align="middle" width="720"/> 
+<img src="../res/4_Session_Holder.png" width="720"/> 
 
 Der ```Behaviour Name``` sollte stets gleich bleiben.
 Die ```SpaceSize``` sollte stets mit der Anzhal der Beobachtungen im ```RLDriver.cs``` gleich sein. 
@@ -283,13 +283,13 @@ Während des Trainings bekommt man in gewissen Intervallen Rückmeldung, je nach
 
 ```tensorboard --logdir results``` kann man sich das TensorBoard und den Verlauf über die Zeit anzeigen lassen.
 
-<img src="../res/2_Unity_ML_Agents_Tensorboard.png" align="middle" width="720"/> 
+<img src="../res/2_Unity_ML_Agents_Tensorboard.png" width="720"/> 
 
 Nach Abschluss des Trainings findet sich das NN in einem Ordner namens ```/results```in einer  ```[ID].onsx```-Datei. 
 Diese kopiert man in das Projekt und muss dann im SessionHolder dieses Datei als Model auswählen.
 
 
-<img src="../res/4_In_Action.png" align="middle" width="720"/> 
+<img src="../res/4_In_Action.png" width="720"/> 
 
 ## Über die Technik ([Doku](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Unity-Inference-Engine.md))
 
