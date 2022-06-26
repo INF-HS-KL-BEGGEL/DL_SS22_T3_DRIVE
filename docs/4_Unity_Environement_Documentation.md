@@ -2,6 +2,9 @@
 
 Innerhalb der Projektzeit wurde ein Environement zum Trainieren von selbstfahrenden Autos mittels des Reinforcement Learnings entwickelt.
 
+
+<img src="../res/4_Start.png" align="middle" width="720"/> 
+
 ## Benötigte Installation von Software
 | Unity | 2021.3.1f1 LTS |
 | Python | 3.7+ |
@@ -72,6 +75,16 @@ Diese sollten vom *Unity Package Manager* richtig eingetragen werden und entspre
 }
 ```
 
+Die Strecke kann unter Verwendung der vorgefertigten Streckenteile indiviudell zusammengebaut werden.
+Dabei sind auch Strecken mit getrenntem Start und Ziel möglich. 
+
+
+<img src="../res/4_Track_Parts.png" align="middle" width="720"/> 
+
+Wir haben uns für folgende Konfiguration entschieden:
+
+<img src="../res/4_Track_Overview.png" align="middle" width="720"/> 
+
 ## Config.yaml zur Konfiguration 
 Vergleiche mit ([offiziellem Repository](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md))
 
@@ -119,31 +132,164 @@ behaviors:
     keep_checkpoints: 5
 ```
 
-### Mögliche Beobachtungen des Agents
-*RLParameters.cs*
+### TrackManager
+
+Falls man im Dateibaum den SessionHolder ausklappt, so kann man dann den ```TrackManager.cs``` öffnen.
+
+<img src="../res/4_Track_Manager.png" align="middle" width="720"/> 
+
+Dieser enthält zahlreiche Informationen zum Status der gebauten Strecke.
+Interessant sind die letzten beiden Checkboxen:
+- ```show Waypoints Trigger``` und
+- ```Show Waypoints Line```
+
+Die ermöglichen das Anzeigen der Waypoints und der Linie, die diese miteinander verbindet.
+
+<img src="../res/4_Waypoints_on.png" align="middle" width="720"/> 
+
+### Rewardfunction im RLDriver
+*RLDriver.cs*
+
+In dieser Methode können zu beobachtende Parameter nach außen angegeben werden.
+
 ```C#
-// TODO:
+public override void CollectObservations(VectorSensor sensor){
+  // sensor.AddObservation(rLParameters.steering_angle);
+}
 ```
 
-### Rewardfunction
-*RLDriver.cs*
+In der ```RewardFunction``` kann man die Methodik zur Evaluation festlegen.
+Durch die WayPoints bietet es sich beispielsweise an, einen hohen Reward beim Durchfahren oder in der Nähe des nächsten Waypoints zu geben. 
+Mit einer kleinen Strafe für jeden Step sowie eine große für das Verlassen der Strecke wird sich das Netz mit dem Auto schnell in Richtung der ersten Wegpunkte bewegen.
+
 ```C#
-// TODO:
+private void RewardFunction(){
+  if (rLParameters.all_wheels_on_track == false || distance_to_next_waypoint > 20f){
+    AddReward(-1.0f);
+    return;
+  }
+
+  if (rLParameters.waypoint_passed){
+    AddReward(1.0f);
+    return;
+  }
+
+  AddReward(-0.001f);
+}
 ```
+
+
+
+Durch Vererbung kann man auf einge nützliche Methoden der Klasse ```Agent``` aus dem ```MLAgents-Package```  zurückgreifen:
+```C#
+AddReward(1.0f);       // Award wird aufaddiert. Sollte immer zwischen -1 und 1 sein.
+SetReward(1.0f);       // Award wird festgelegt. Sollte immer zwischen -1 und 1 sein.
+EndEpisode();          // Startet den nächsten Durchlauf.
+```
+
+
+Dabei ist Einiges zu beachten:
+- Parameter, die in der Reward-Function genutzt werden, sollten auch Teil der Observationen sein.
+- Werte sollten niemals größer als der Betrag von 1 sein.
+- Die Methode wird bei jedem Step aufgerufen.
+- Positives als auch negatives Verhalten muss bewertet und dem Agenten mitgeteilt werden.
+- Man muss auch kleine Erfolge (Distanz zum Waypoint verkleinert sich) loben.
+- Bei Aufrufen von EndEpisode muss auch der Reward negativ sein, falls man beispielsweise das Verlassen der Strecke mit dem Start der nächsten Runde verbindet.
+
+
+### Parameter für das Reinforcement Learning
+*RLParameters.cs*
+Die Attribute dieser Klasse sind alle zum Abruf in RewardFunctions der Agenten abrufbar.
+Diese können genutzt werden, um eigene, neue Werte zu berechnen.
+
+```C#
+public bool all_wheels_on_track;
+public bool approaching_next_waypoint;
+public bool waypoint_passed;
+public bool more_waypoints_reached;
+public bool reached_new_high_speed;
+public bool round_over;
+
+public float distance_from_center;
+public float speed;
+public float track_completion_progression;
+public float steering_angle;
+public float distance_to_next_waypoint;
+public float alignment_with_next_waypoint;
+public float alignment_speed_ratio;
+public float round_time;
+
+public Vector3 track_center_position;
+public Vector3 next_waypoint_position;
+
+public int round_counter;
+```
+
+Zum bessere Verständnis fährt man am Besten die Strecke manuell ab und beobachtet dabei die Werte im Detail.
+Nachfolgend sind die wichtigsten Parameter kurz erklärt:
+
+| **Name**                     | **Typ**  | **Beschreibung**                                                                                                                                      |
+| ---------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| all_wheels_on_track          | Boolean  | Sind alle vier Räder im Bereich der erlaubten Fahrstrecke.                                                                                            |
+| waypoint_passed              | Boolean  | Immer ```false```, wird beim Durchfahren des nächsten Waypoints kurzzeitg ````true```.                                                                |
+| distance_from_center         | Float    | Gibt den Betrag in m der Distanz zur Mittellinie an.                                                                                                  |
+| speed                        | Float    | Gibt die aktuelle Geschwindigkeit an. Dabei ist zu beachten, dass bei Annäherung zum nächsten Punkt der Wert positiv, bei Distanzierung negativ ist.  |
+| track_completion_progression | Float    | Gibt im Bereich 0 bis 1 an, wie viele Wegepunkte schon eingesammelt wurden. Bei voller Runde erhöht sich der RoundCounter.                            |
+| distance_to_next_waypoint    | Float    | Bezeichnet die Distanz in m zum nächsten, zu sammelnden Wegepunkt an.                                                                                 |
 
 ### SessionHolder
 *SessionHolder.cs*
-// TODO:
+
+Klappt man diese Datei im Inspector aus, so sieht man alle relevanten Informationen zu:
+- ```RLParameters.cs```,
+- ```TrackManager.cs```,
+- ```RLDriver.cs``` und
+- den ```Behaviour Parameters```
+
+<img src="../res/4_Session_Holder.png" align="middle" width="720"/> 
+
+Der ```Behaviour Name``` sollte stets gleich bleiben.
+Die ```SpaceSize``` sollte stets mit der Anzhal der Beobachtungen im ```RLDriver.cs``` gleich sein. 
+Sollte dies nicht der Fall sein, erscheint in der Konsole eine entsprechende Warnung.
+
+Wichtig ist auch der ```Max Step```. Dieser sollte gerade am Anfang nicht zu groß gewält werden.
+
+Falls trainierte Modelle verfügbar sind, können diese ausgewählt werden.
+Zum Nutzen des Modells sollte der ```Behaviour Type``` auf ```Interference Only``` stehen. 
+Mit dem ```Heuristic Mode``` wird das manuelle Steuern mit den Tasten WASD oder die Pfeiltasten ermöglicht.
+
 
 ### Training
 
-Commands zum Starten
-// TODO --force
--- resume
-tensor board
+Um das Training zu starten, öffnet man ein Terminal und navigiert zur Ordner des Projektes
+
+Dort angekommen gibt man folgende Kommandos zum Start des Trainings an. 
+Die ```rl_deep_race_config.yaml``` ist unter ```/Assets/Library``` verfügbar.
+
+Der Trainingsprozess wird mit folgendem Kommando ertmalig gestartet:
+```mlagents-learn [relativer Pfad zur Config.yaml] --run-id=[ID]```
+
+Eine Fortsetzung des Trainings kann mit einer bereits existierenden ID und dem Zusatz ```--resume``` erreicht werden.
+Mit dem Zusatz ```--force`` kann ein Überschreiben erzwungen werden.
+
+Während des Trainings bekommt man in gewissen Intervallen Rückmeldung, je nach eingestelltem Wert unter der summary_freq, zum aktuell verlaufenden Training.
+```yaml
+[INFO] rl_deep_race. Step: 240000. Time Elapsed: 377.744 s. Mean Reward: -0.140. Std of Reward: 1.574. Training.
+[INFO] rl_deep_race. Step: 270000. Time Elapsed: 143.063 s. Mean Reward: -1.750. Std of Reward: 1.639. Training.
+[INFO] rl_deep_race. Step: 300000. Time Elapsed: 402.100 s. Mean Reward: -0.667. Std of Reward: 2.008. Training.
+[INFO] rl_deep_race. Step: 330000. Time Elapsed: 121.917 s. Mean Reward: 0.600. Std of Reward: 1.855. Training.
+[INFO] rl_deep_race. Step: 360000. Time Elapsed: 470.298 s. Mean Reward: 1.134. Std of Reward: 1.477. Training.
+```
+
+```tensorboard --logdir results``` kann man sich das TensorBoard und den Verlauf über die Zeit anzeigen lassen.
 
 <img src="../res/2_Unity_ML_Agents_Tensorboard.png" align="middle" width="720"/> 
 
+Nach Abschluss des Trainings findet sich das NN in einem Ordner namens ```/results```in einer  ```[ID].onsx```-Datei. 
+Diese kopiert man in das Projekt und muss dann im SessionHolder dieses Datei als Model auswählen.
+
+
+<img src="../res/4_In_Action.png" align="middle" width="720"/> 
 
 ## Über die Technik ([Doku](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Unity-Inference-Engine.md))
 
@@ -153,3 +299,4 @@ tensor board
 - Es ist aber möglich wenn die Input und Output Tensoren angepasst werden
 - Grund ist eigene Engine die auf Compute Shader basiert
 - Baut auf Pytorch und dem Open Neural Network Exchange Format auf
+
