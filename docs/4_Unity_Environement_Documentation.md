@@ -3,7 +3,7 @@
 Innerhalb der Projektzeit wurde ein Environement zum Trainieren von selbstfahrenden Autos mittels des Reinforcement Learnings entwickelt.
 
 
-<img src="../res/4_Start.png" align="middle" width="720"/> 
+<img src="../res/4_Start.PNG"> 
 
 ## Benötigte Installation von Software
 | Unity | 2021.3.1f1 LTS |
