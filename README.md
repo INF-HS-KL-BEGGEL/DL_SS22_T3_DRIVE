@@ -1,16 +1,15 @@
 # U Race
 
-## Unity Reinforcement Autonomous Car Environment
 
-<img src="./res/4_U_Race_Cover.png" width="720"/> 
+<img src="./res/4_U_Race_Cover.png"/> 
 
 Während der Projektarbeit wurde mittels der GameEngine [Unity](https://unity.com/) eine Umgebung für interessierte Studierende zum Trainieren von selbstfahrenden Autos auf einer konfigurierbaren Strecke entwickelt. 
 Für das Starten des Lernens und genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md).
 
 ## Blogartikel
 
-- [Titel1](Link1)
-- [Titel2](Link2)
+- [U-Race](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [AWS-DeepRacer](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Dokumente zum Projektfortschritt
 
@@ -23,7 +22,7 @@ Für das Starten des Lernens und genaue technische Details gibt es dazu die [tec
 
 ## Studierende
 
-<p align="center" width="100%">
+<p align="center">
 
 | **Vorname** | **Nachname** | **E-Mail**           |
 | ----------- | ------------ | -------------------- |
