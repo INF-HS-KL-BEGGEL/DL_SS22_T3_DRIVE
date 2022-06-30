@@ -1,6 +1,6 @@
 # U Race
 
-<img src="./res/4_U_Race_Cover.png"/> 
+<img src="../res/4_U_Race_Cover.png"/> 
 
 ## Unity Reinforcement Autonomous Car Environment
 

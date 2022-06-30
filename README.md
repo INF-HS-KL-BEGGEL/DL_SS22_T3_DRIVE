@@ -22,15 +22,14 @@ Für das Starten des Lernens und genaue technische Details gibt es dazu die [tec
 
 ## Studierende
 
-<p align="center">
-
-| **Vorname** | **Nachname** | **E-Mail**           |
-| ----------- | ------------ | -------------------- |
-|Aaron        |Santamaria    |aasa0001@stud.hs-kl.de|
-|Alexander    |Opris         |alop0001@stud.hs-kl.de|
-|Maximilian   |Kreutz        |makr0050@stud.hs-kl.de|
-
+<p align="center" width="100%">
+    | **Vorname** | **Nachname** | **E-Mail**           |
+    | ----------- | ------------ | -------------------- |
+    |Aaron        |Santamaria    |aasa0001@stud.hs-kl.de|
+    |Alexander    |Opris         |alop0001@stud.hs-kl.de|
+    |Maximilian   |Kreutz        |makr0050@stud.hs-kl.de|
 </p>
+
 <br>
 <br>
 <p align="center" width="100%">
