@@ -1,11 +1,11 @@
-# DL_SS22_T3_DRIVE
+# U Race
 
-## Unity-Environement zum Reinforcement Learning
+## Unity Reinforcement Autonomous Car Environment
 
-<img src="./res/4_Start.PNG" width="720"/> 
+<img src="./res/4_U_Race_Cover.png" width="720"/> 
 
 Während der Projektarbeit wurde mittels der GameEngine [Unity](https://unity.com/) eine Umgebung für interessierte Studierende zum Trainieren von selbstfahrenden Autos auf einer konfigurierbaren Strecke entwickelt. 
-Für genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md).
+Für das Starten des Lernens und genaue technische Details gibt es dazu die [technische Dokumentation](./docs/4_Unity_Environement_Documentation.md).
 
 ## Blogartikel
 
@@ -19,6 +19,7 @@ Für genaue technische Details gibt es dazu die [technische Dokumentation](./doc
 - [AWS DeepRacer](./docs/1_AWS_DeepRacer.md)
 - [Unity ML Agents](./docs/2_Unity_ML_Agents.md)
 - [AWS DeepRacer Optimization](./docs/3_AWS_DeepRacer_Optimization.md)
+- [technische Dokumentation zu U-Race](./docs/4_Unity_Environement_Documentation.md)
 
 ## Studierende
 
