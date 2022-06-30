@@ -310,10 +310,7 @@ Diese kopiert man in das Projekt und muss dann im SessionHolder dieses Datei als
 <br>
 <p align="center" width="100%">
     <a href="https://www.hs-kl.de/">
-        <img align="middle"
-            src="../res/4_U_Race_Logo.PNG"
-            width="200px" 
-            height="100"/>
+        <img align="middle" src="../res/4_U_Race_Logo.PNG"/>
     </a>
 </p>
 
