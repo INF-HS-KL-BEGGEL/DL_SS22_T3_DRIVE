@@ -1,7 +1,11 @@
-# Unity-Environement zum Reinforcement Learning von selbstfahrenden Autos
+# U Race
+
+<img src="./res/4_U_Race_Cover.png"/> 
+
+## Unity Reinforcement Autonomous Car Environment
 
 Innerhalb der Projektzeit wurde ein Environement zum Trainieren von selbstfahrenden Autos mittels des Reinforcement Learnings entwickelt.
-
+Alle Skripte zum Lernen als auch zum eigenständigen Fahren sind in der für *Unity* typischen objektorientierten Programmiersprache *C#* geschrieben.
 
 <img src="../res/4_Start.PNG"> 
 
@@ -15,11 +19,12 @@ Unity ist kostenlos für Schüler und Studierende ab 16 Jahren. Dazu muss man si
 
 Python kann unter [python.org](https://www.python.org/downloads/release/python-370/) herutnergeladen werden.
 
-```
+```C#
 python -m pip install --upgrade pip
 pip install pytorch==1.7
 pip install mlagents==0.28.0
 ```
+
 Alternativ kann PyTorch auf der [offiziellen Website](https://pytorch.org/) heruntergeladen werden.
 
 ## Abhängigkeiten des Projektes
@@ -256,7 +261,7 @@ Wichtig ist auch der ```Max Step```. Dieser sollte gerade am Anfang nicht zu gro
 
 Falls trainierte Modelle verfügbar sind, können diese ausgewählt werden.
 Zum Nutzen des Modells sollte der ```Behaviour Type``` auf ```Interference Only``` stehen. 
-Mit dem ```Heuristic Mode``` wird das manuelle Steuern mit den Tasten WASD oder die Pfeiltasten ermöglicht.
+Mit dem ```Heuristic Mode``` wird das manuelle Steuern mit den Tasten WASD oder den Pfeiltasten ermöglicht.
 
 
 ### Training
@@ -299,4 +304,16 @@ Diese kopiert man in das Projekt und muss dann im SessionHolder dieses Datei als
 - Es ist aber möglich wenn die Input und Output Tensoren angepasst werden
 - Grund ist eigene Engine die auf Compute Shader basiert
 - Baut auf Pytorch und dem Open Neural Network Exchange Format auf
+
+</p>
+<br>
+<br>
+<p align="center" width="100%">
+    <a href="https://www.hs-kl.de/">
+        <img align="middle"
+            src="./res/4_U_Race_Logo.png"
+            width="200px" 
+            height="100"/>
+    </a>
+</p>
 
