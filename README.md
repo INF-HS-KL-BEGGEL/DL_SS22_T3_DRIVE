@@ -19,10 +19,9 @@ Alle Skripte zum Lernen als auch zum eigenständigen Fahren sind in der für *Un
         3. [Rewardfunction im *RLDriver.cs*](#u_race_scripts_rl_driver)
         4. [*RLParameters.cs*](#u_race_parameters)
     6. [Trainingsprozess](#u_race_training)
-2. [Another paragraph](#paragraph2)
-3. [Blogartikel](#articles)
-4. [Dokumente zum Projektfortschritt](#project_progress)
-5. [Studierende](#students)
+2. [Blogartikel](#articles)
+3. [Dokumente zum Projektfortschritt](#project_progress)
+4. [Studierende](#students)
 
 ## Technische Dokumentation <a name="u_race_documentation"></a>
 
