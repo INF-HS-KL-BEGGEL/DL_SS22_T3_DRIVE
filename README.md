@@ -39,7 +39,7 @@ Alle Skripte zum Lernen als auch zum eigenständigen Fahren sind in der für *Un
 
 Unity ist kostenlos für Schüler und Studierende ab 16 Jahren. Dazu muss man sich mit der Studentenmail und SheerID [registrieren](https://store.unity.com/de/#plans-individual).
 
-Python kann unter [python.org](https://www.python.org/downloads/release/python-370/) herutnergeladen werden.
+Python kann unter [python.org](https://www.python.org/downloads/release/python-370/) heruntergeladen werden.
 
 ```C#
 python -m pip install --upgrade pip
