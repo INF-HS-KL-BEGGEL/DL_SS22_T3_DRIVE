@@ -361,7 +361,7 @@ Diese können im Ordner ```docs``` oder über die Links in der folgenden Liste e
 <br>
 <p align="center" width="100%">
     <a href="https://www.hs-kl.de/">
-        <img align="middle" src="../res/4_U_Race_Logo.PNG"/>
+        <img align="middle" src="./res/4_U_Race_Logo.PNG"/>
     </a>
 </p>
 
