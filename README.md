@@ -117,8 +117,12 @@ Wir haben uns für folgende Konfiguration entschieden:
 
 
 ### Config.yaml <a name="u_race_config"></a>
-Vergleiche mit ([offiziellem Repository](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md))
-Zum Bearbeiten sollte der Name des behaviours beibehalten werden. 
+
+Zum schnellen Trainieren bedarf die Config keiner Anpassung.
+
+Allerdings kann das Netz durch erfahrene Nutzer sehr individuell konfiguriert werden.
+
+Zum Bearbeiten sollte der Name des Behaviours zwingend beibehalten und mit dem ([offiziellem Repository](https://github.com/Unity-Technologies/ml-agents/blob/main/docs/Training-Configuration-File.md)) verglichen werden.
 
 ```yaml
 default_settings:
