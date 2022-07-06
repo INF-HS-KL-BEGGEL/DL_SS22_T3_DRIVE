@@ -345,7 +345,7 @@ Diese können im Ordner ```docs``` oder über die Links in der folgenden Liste e
 - [AWS DeepRacer](./docs/1_AWS_DeepRacer.md),
 - [Unity ML Agents](./docs/2_Unity_ML_Agents.md),
 - [AWS DeepRacer Optimization](./docs/3_AWS_DeepRacer_Optimization.md) ,
-- [Präsentation zu PPO](./docs/4_Presenation_Proximal_Policy_Optimization_(PPO).pdf),
+- [Präsentation zu PPO](./docs/4_Presentation_PPO_Proximal_Policy_Optimization.pdf),
 - [der restliche Resourcen-Ordner](./res/)
 
 ## Studierende <a name="students"></a>
