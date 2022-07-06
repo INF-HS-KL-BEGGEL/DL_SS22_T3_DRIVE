@@ -285,7 +285,7 @@ Nachfolgend sind die wichtigsten Parameter kurz erklärt:
 | ---------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | all_wheels_on_track          | Boolean  | Sind alle vier Räder im Bereich der erlaubten Fahrstrecke.                                                                                            |
 | waypoint_passed              | Boolean  | Immer ```false```, wird beim Durchfahren des nächsten Waypoints kurzzeitg ````true```.                                                                |
-| distance_from_center         | Float    | Gibt den Betrag in m der Distanz zur Mittellinie an.                                                                                                  |
+| distance_from_center         | Float    | Gibt den Betrag der Distanz zur Mittellinie in m an.                                                                                                  |
 | speed                        | Float    | Gibt die aktuelle Geschwindigkeit an. Dabei ist zu beachten, dass bei Annäherung zum nächsten Punkt der Wert positiv, bei Distanzierung negativ ist.  |
 | track_completion_progression | Float    | Gibt im Bereich 0 bis 1 an, wie viele Wegepunkte schon eingesammelt wurden. Bei voller Runde erhöht sich der RoundCounter.                            |
 | distance_to_next_waypoint    | Float    | Bezeichnet die Distanz in m zum nächsten, zu sammelnden Wegepunkt an.                                                                                 |
