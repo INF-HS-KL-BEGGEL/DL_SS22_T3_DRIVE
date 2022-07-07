@@ -51,6 +51,8 @@ Alternativ kann PyTorch auf der [offiziellen Website](https://pytorch.org/) heru
 
 ### Abhängigkeiten des Projektes <a name="u_race_dependencies"></a>
 Diese sollten vom *Unity Package Manager* richtig eingetragen werden und entsprechende Pakete installiert werden.
+Sollte eine Dependency nicht gefunden werden, so sollte man die ```manifest.json``` löschen oder mit folgendem Inhalt füllen:
+
 ```JSON
 {
   "dependencies": {
@@ -101,6 +103,8 @@ Diese sollten vom *Unity Package Manager* richtig eingetragen werden und entspre
   }
 }
 ```
+
+Sollte es Probleme beim Öffnen der Szene geben, so kann es helfen, alle Assets/Modelle in Blender zu öffnen und dann ohne Änderungen abzuspeichern.
 
 
 ### Strecke <a name="u_race_track"></a>
@@ -268,8 +272,6 @@ float speed;
 float track_completion_progression;
 float steering_angle;
 float distance_to_next_waypoint;
-float alignment_with_next_waypoint;
-float alignment_speed_ratio;
 float round_time;
 
 Vector3 track_center_position;
@@ -336,8 +338,8 @@ Zusättlich sollte der Mode zu ```Interference Only``` geändert werden.
 
 
 ## Blogartikel <a name="articles"></a>
-- [U-Race](TODO)
-- [AWS-DeepRacer](TODO)
+- [U-Race](https://ki.hs-kl.de/u-race/)
+- [AWS-DeepRacer](https://ki.hs-kl.de/aws-deepracer/)
 
 ## Dokumente zum Projektfortschritt <a name="project_progress"></a>
 
